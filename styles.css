@@ -1,0 +1,69 @@
+/*task1*/
+p {
+    font-size: 20px;
+}
+
+span {
+    width: 100%;
+}
+
+img {
+    border-color: black;
+    border-style: solid;
+}
+
+.big_name {
+    width: 300px;
+}
+
+.center {
+    text-align: center;
+}
+
+
+/*task2*/
+
+.diagram{
+    border-color: black;
+    border-style: solid;
+    border-width: 5px;
+    height: 330px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    flex-direction: row;
+}
+.width60 {
+    width: 60px;
+}
+
+.diagrama_text_el {
+    position: absolute;
+    width: 60px;
+    bottom: -20px;
+    text-align: center;
+}
+
+.on_mouse_over_el {
+    width: 120px;
+    height: 330px;
+}
+
+.tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    width: 80px;
+    height: 330px;
+    margin-bottom: -60px;
+    margin-right: -65vw;
+}
+
+
