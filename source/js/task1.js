@@ -35,7 +35,7 @@ function check_num_data(id) {
             image.style.borderWidth = `${el_num_val}px`;
             break;
         default:
-            alert("Error");
+            // alert("Error");
     }
 
     successful_border(id);
@@ -52,7 +52,7 @@ function check_border_color() {
 
     const rgb = get_rgb(border_color_el.value);
 
-    if (!check_rgb(rgb)) {
+    if (rgb.isEmpty()||!check_rgb(rgb)) {
         unsuccessful_border("border_color")
         return false;
     }
@@ -82,7 +82,6 @@ function successful_border(name) {
     document.getElementById(name).style.borderColor = "green";
 }
 
-//baga
 function check_rgb(obj) {
     for (let color in obj) {
         if (parseInt(obj[color]) > 255)
@@ -98,4 +97,12 @@ function get_rgb(str){
         green: match[2],
         blue: match[3]
     } : {};
+}
+
+Object.prototype.isEmpty = function () {
+    for (var key in this) {
+        if (this.hasOwnProperty(key))
+            return false;
+    }
+    return true;
 }
